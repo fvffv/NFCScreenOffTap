@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.fvffv.nfcscreenofftap">  <!-- 替换为你的包名 -->
+
+
+    <application
+            android:allowBackup="true"
+            android:fullBackupContent="@xml/backup_rules"
+            android:dataExtractionRules="@xml/data_extraction_rules"
+            android:label="@string/app_name"
+            android:icon="@mipmap/icon"
+            android:roundIcon="@mipmap/icon"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.NFCScreenOffTap">
+
+        <meta-data
+                android:name="xposedmodule"
+                android:value="true" />
+        <meta-data
+                android:name="xposeddescription"
+                android:value="修改三星NFC息屏刷卡，针对ONE7/8" />
+        <meta-data
+                android:name="xposedminversion"
+                android:value="82" />
+        <meta-data
+                android:name="xposedscope"
+                android:resource="@array/xposed_scope" />
+    </application>
+
+</manifest>
